@@ -1,4 +1,12 @@
-/* Global Styles */
+:root {
+    --primary-color: #444444;
+    --secondary-color: #f8f8f8;
+    --accent-color: #fff;
+    --button-color: #333;
+    --hover-color: #f1f1f1;
+    --border-color: #ccc;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +15,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 a {
@@ -17,8 +25,8 @@ a {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -26,41 +34,64 @@ header {
 }
 
 header .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 header form {
     display: flex;
+    justify-content: center;
+    margin-right: 2rem;
 }
 
 header input[type="search"] {
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
 }
 
 header input[type="submit"] {
     padding: 0.5rem;
-    background-color: #333;
-    color: #fff;
-    border: 1px solid #333;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: 1px solid var(--primary-color);
     border-radius: 4px;
     cursor: pointer;
 }
 
 header a {
-    color: #fff;
+    color: var(--accent-color);
     font-size: 1.2rem;
 }
 
-header a span {
-    margin-left: 0.5rem;
+nav {
+    background-color: var(--primary-color);
+    padding: 20px;
 }
 
-/* Main Content */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.nav-list li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-list li a:hover {
+    color: var(--hover-color);
+}
+
 main {
     padding: 2rem;
+}
+
+.special-event {
+    text-align: center;
 }
 
 section {
@@ -68,9 +99,14 @@ section {
 }
 
 section p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+}
+
+.product-details {
+    display: flex;
+    gap: 2rem;
 }
 
 .product-list {
@@ -81,7 +117,7 @@ section p {
 }
 
 .product-item {
-    background-color: #fff;
+    background-color: var(--accent-color);
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -103,21 +139,21 @@ section p {
 
 .product-item button {
     padding: 0.5rem 1rem;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
-/* Form Styling */
 form {
     display: grid;
     gap: 1rem;
     max-width: 400px;
     margin: 0 auto;
-    padding: 2rem;
-    background-color: #fff;
+    padding: 0.5rem;
+    background-color: var(--accent-color);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -125,23 +161,23 @@ form {
 form input {
     padding: 0.75rem;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
 }
 
-form button {
+button
+/*form button*/ {
     padding: 0.75rem;
-    background-color: #333;
-    color: #fff;
-    border: 1px solid #333;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: 1px solid var(--primary-color);
     border-radius: 4px;
     cursor: pointer;
 }
 
-/* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;

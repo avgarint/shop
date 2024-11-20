@@ -14,29 +14,41 @@
     <body>
 
         <header>
-            <a href="/">E-Commerce</a>
-            <form action="" method="" enctype="multipart/form-data">
-                <input type="search" name="query" placeholder="Search...">
-                <input type="submit">
+            <a href="/" class="logo">E-Commerce</a>
+            <form action="" method="" enctype="multipart/form-data" class="header-search">
+                <input type="search" name="query" placeholder="Search..." class="search-input">
+                <input type="submit" class="search-submit">
             </form>
+            <a href="login.html">
+                👤
+                <span class="">Login</span>
+            </a>
             <a href="cart.html">
-                🛒 <span>0</span>
+                🛒
+                <span class="">Cart (0)</span>
             </a>
         </header>
 
+        <nav>
+            <ul class="nav-list">
+                <li><a href="/">Lorem</a></li>
+                <li><a href="/">Ipsum</a></li>
+                <li><a href="/">Labore</a></li>
+                <li><a href="/">Dolor</a></li>
+            </ul>
+        </nav>
+
         <main>
-            <section>
-                <article class="product-item">
-                    <img src="https://placehold.co/400" alt="Instinct Manga Cover" />
-                    <div>
-                        <h1>Instinct: Le Premier Manga d'Inoxtag</h1>
-                        <p>
-                            Haki, 19 ans, a le don de voir les intentions d'autrui. Il perçoit l'aura de ceux qui l'entourent et doit constamment supporter la nature humaine.
-                        </p>
-                        <button>Commander</button>
-                    </div>
-                </article>
-            </section>
+            <article class="product-details">
+                <div>
+                    <img src="https://placehold.co/256">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>$99</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sapiente culpa placeat libero, quisquam asperiores iure distinctio magnam reprehenderit pariatur repellat ullam molestiae odit cumque consequuntur, voluptatum cum ratione saepe.</p>
+                </div>
+            </article>
         </main>
 
         <footer>
