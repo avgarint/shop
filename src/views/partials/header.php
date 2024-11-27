@@ -18,11 +18,11 @@
                 <input type="search" name="query" placeholder="Search..." class="search-input">
                 <input type="submit" class="search-submit">
             </form>
-            <a href="/proj/src/views/login.php">
+            <a href="../views/login.php">
                 👤
                 <span class="">Login</span>
             </a>
-            <a href="/proj/src/views/cart.php">
+            <a href="../views/cart.php">
                 🛒
                 <span class="">Cart (0)</span>
             </a>
