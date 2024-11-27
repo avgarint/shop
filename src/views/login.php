@@ -6,6 +6,6 @@
         <input type="password" placeholder="Password" required />
         <button type="submit">Login</button>
     </form>
-    <a href="register.html">Not registered? Create an account now.</a>
+    <a href="/proj/src/views/register.php">Not registered? Create an account now.</a>
 </main>
 <?php include "partials/footer.php" ?>
