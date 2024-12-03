@@ -13,16 +13,16 @@
     </head>
     <body>
         <header>
-            <a href="/proj/public/index.php" class="logo">E-Commerce</a>
+            <a href="/proj/src/views/home.php" class="logo">E-Commerce</a>
             <form action="" method="" enctype="multipart/form-data" class="header-search">
                 <input type="search" name="query" placeholder="Search..." class="search-input">
                 <input type="submit" class="search-submit">
             </form>
-            <a href="../views/login.php">
+            <a href="/proj/src/views/login.php">
                 👤
                 <span class="">Login</span>
             </a>
-            <a href="../views/cart.php">
+            <a href="/proj/src/views/cart.php">
                 🛒
                 <span class="">Cart (0)</span>
             </a>
